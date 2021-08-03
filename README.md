@@ -23,9 +23,33 @@ This file has been created as a sample linear regression. Below is a summary of 
     - Min/Max of category
     - Correlation Matrix
 - Category Aggregates
+    - Outliers
+    - Identify Potential Dummy Variables
+    - Identify aggregates with a numerical variables
  
-#### 3. Model
+#### 3. Transformation & Feature Selection
+
+- Transformations
+    - General Transformations:
+        - Log Transformation
+        - Clipping
+            - Quantile
+            - Both upper and lower?
+        - Scaling
+            - Min Max Normalization
+            - Standard Scaler
+            - Robust Scaler
+    - Time Variables
+        - Varaibles created from differences in two dates
+        - Choose date granularity
+        - Timezone
+    - Monetary Variables
+        - Remove signs, comma
+        - Round
 - Feature Selection
+    - 
+
+#### 4. Model
 - Train, Test Split
 - Run in stats model
 - Check Summary Table
@@ -43,7 +67,7 @@ This file has been created as a sample linear regression. Below is a summary of 
 - Plot pred v acutal
 - Check RSME, MAE
 
-#### 4. Model Iteration:
+#### 5. Model Iteration:
    - Add/Remove Variable?
    - Combine Variable?
    - Run Model on Different Granularity?
